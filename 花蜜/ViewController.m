@@ -21,7 +21,6 @@
         if (idx<2) {
             obj.tabBarItem.image = [[UIImage imageNamed:[NSString stringWithFormat:@"ic_tabhost_%lu",(unsigned long)idx]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             obj.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"ic_tabhost_%lu_checked",(unsigned long)idx]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-            
         }else if(idx>2){
             obj.tabBarItem.image = [[UIImage imageNamed:[NSString stringWithFormat:@"ic_tabhost_%lu",(unsigned long)idx-1]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             obj.tabBarItem.selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"ic_tabhost_%lu_checked",(unsigned long)idx-1]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -37,13 +36,16 @@
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tabBar.bounds.size.width, 1)];//把黑线重新加上，这样黑线可以在按钮下面了
     [self.tabBar addSubview:line];
     line.backgroundColor = [UIColor grayColor];
-    
-    UIButton *button = [[Custom alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width/2-20, -23, 55, 72)];
+//
+    CGFloat width = 55;
+    CGFloat height = 72;
+    UIButton *button = [[Custom alloc]initWithFrame:CGRectMake((self.tabBar.bounds.size.width-width)/2, self.tabBar.bounds.size.height - height, 55, height)];
     button.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [button setImage:[UIImage imageNamed:@"ic_camera"] forState:UIControlStateNormal];
     [self.tabBar addSubview:button];
     [self.tabBar bringSubviewToFront:button];
     [button addTarget:self action:@selector(selectImagePicker) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 - (void)selectImagePicker {
