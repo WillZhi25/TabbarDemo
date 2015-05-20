@@ -72,6 +72,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC723C001B0C5683004F03B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CCE33E291B0A1354008553A9 /* HomeViewController.h */,
+				CCE33E2A1B0A1354008553A9 /* HomeViewController.m */,
+				CCE33E261B0A1213008553A9 /* BaseNaviViewController.h */,
+				CCE33E271B0A1213008553A9 /* BaseNaviViewController.m */,
+				CCE33E011B0A07EC008553A9 /* ViewController.h */,
+				CCE33E021B0A07EC008553A9 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CC723C011B0C568B004F03B8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CCE33E231B0A0FD7008553A9 /* UIImage+Color.h */,
+				CCE33E241B0A0FD7008553A9 /* UIImage+Color.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		CC723C021B0C5694004F03B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCE33E201B0A0E3C008553A9 /* Custom.h */,
+				CCE33E211B0A0E3C008553A9 /* Custom.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CCE33DEE1B0A07EC008553A9 = {
 			isa = PBXGroup;
 			children = (
@@ -93,22 +124,15 @@
 		CCE33DF91B0A07EC008553A9 /* 花蜜 */ = {
 			isa = PBXGroup;
 			children = (
-				CCE33E261B0A1213008553A9 /* BaseNaviViewController.h */,
-				CCE33E271B0A1213008553A9 /* BaseNaviViewController.m */,
-				CCE33E231B0A0FD7008553A9 /* UIImage+Color.h */,
-				CCE33E241B0A0FD7008553A9 /* UIImage+Color.m */,
+				CC723C021B0C5694004F03B8 /* View */,
+				CC723C001B0C5683004F03B8 /* Controller */,
+				CC723C011B0C568B004F03B8 /* Helper */,
 				CCE33DFE1B0A07EC008553A9 /* AppDelegate.h */,
 				CCE33DFF1B0A07EC008553A9 /* AppDelegate.m */,
-				CCE33E011B0A07EC008553A9 /* ViewController.h */,
-				CCE33E021B0A07EC008553A9 /* ViewController.m */,
 				CCE33E041B0A07EC008553A9 /* Main.storyboard */,
 				CCE33E071B0A07EC008553A9 /* Images.xcassets */,
 				CCE33E091B0A07EC008553A9 /* LaunchScreen.xib */,
 				CCE33DFA1B0A07EC008553A9 /* Supporting Files */,
-				CCE33E201B0A0E3C008553A9 /* Custom.h */,
-				CCE33E211B0A0E3C008553A9 /* Custom.m */,
-				CCE33E291B0A1354008553A9 /* HomeViewController.h */,
-				CCE33E2A1B0A1354008553A9 /* HomeViewController.m */,
 			);
 			path = "花蜜";
 			sourceTree = "<group>";
@@ -440,6 +464,7 @@
 				CCE33E1C1B0A07EC008553A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCE33E1D1B0A07EC008553A9 /* Build configuration list for PBXNativeTarget "花蜜Tests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +473,7 @@
 				CCE33E1F1B0A07EC008553A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
